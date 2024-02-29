@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number with a While Loop</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        let guessNumber = 0;
+        let numberToGuest = 71;
+        let guess;
+        while (guess != numberToGuest){
+            guess = Math.floor(Math.random() * 100);
+            guessNumber++;
+        }
+        document.getElementById('root').innerHTML = `
+        <h2>I guess it!</h2>
+        <p>It only took me ${guessNumber} guesses!</p>`
+    </script>
+</body>
+</html>

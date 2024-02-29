@@ -1,0 +1,1 @@
+const house = {sqft: 800, bdRooms: 2, bthRoomes: 1}
